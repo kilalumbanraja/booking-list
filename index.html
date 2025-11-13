@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Tiket Film</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎟️ Pesan Tiket Film</h2>
+
+    <form>
+      <label for="film">Film</label>
+      <select id="film" required>
+        <option value="">Pilih Film</option>
+        <option>Dune: Part Two</option>
+        <option>Deadpool & Wolverine</option>
+        <option>Avatar 3</option>
+      </select>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time Showing</label>
+      <select id="time" required>
+        <option>13:00</option>
+        <option>15:00</option>
+        <option>18:00</option>
+      </select>
+
+      <label for="pcs">Pcs of Ticket</label>
+      <input type="number" id="pcs" min="1" max="10" value="1" required>
+
+      <button type="submit">Buy Ticket</button>
+    </form>
+  </div>
+</body>
+</html>
